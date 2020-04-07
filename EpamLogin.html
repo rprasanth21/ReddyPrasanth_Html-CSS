@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sign in Form with Icons</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        h2 {
+            padding-top: 9px;
+            padding-bottom: 20px;
+        }
+        
+        button {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .divider-text {
+            position: relative;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .divider-text span {
+            padding: 7px;
+            font-size: 12px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .divider-text:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+            top: 55%;
+            left: 0;
+            z-index: 1;
+        }
+        
+        .btn-facebook {
+            background-color: #405D9D;
+            color: #fff;
+        }
+        
+        .btn-google {
+            background-color: #DD4B39;
+            color: #fff;
+        }
+        
+        .btn-epam {
+            background-color: #cdf213;
+            letter-spacing: 2pt;
+        }
+        
+        .btn-signin2 {
+            color: #fff;
+        }
+        
+        .icon {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: white;
+        }
+        
+        .signin-tag {
+            padding-top: 1px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .signin-tag {
+            font-size: 1rem;
+            letter-spacing: 0.5pt;
+        }
+        
+        .card-signin {
+            border: 0;
+            border-radius: 1rem;
+            box-shadow: 0 1rem 1.5rem 0 rgba(0, 0, 0, 0.4);
+        }
+        
+        .card-header {
+            background-color: #13d4ca;
+            border-radius: 0.5rem 0.5rem 0 0;
+            color: white;
+        }
+        
+        .card-header .inside {
+            font-size: 2rem;
+            padding-left: 15pt;
+            padding-top: 10pt;
+            padding-right: 15pt;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .card-header .inside #signin {
+            font-size: 2.1rem;
+            font-weight: bold;
+            margin-top: -0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reg-form">
+        <div class="border">
+            <div class="container-fluid">
+                <div class="card-signin">
+                    <div class="card-header">
+                        <div class="inside">
+                            <i class="fas fa-graduation-cap"></i>
+                            <p id="signin">Sign in</p>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="mail@example.com" required="required">
+                        <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Password" required="required">
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-block btn-signin2" style="background-color: #13d4ca;">SIGN IN</button>
+                </div>
+                <div class="signin-tag wrapper">
+                    <p>Forgot your password?</p>
+                    <p>Register !</p>
+                </div>
+                <p class="divider-text">
+                    <span class="bg-light">OR</span>
+                </p>
+                <br>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-block btn-facebook"><i class="fab fa-facebook-f "></i></button>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-block btn-google"><i class="fab fa-google "></i></button>
+                </div>
+                <br>
+                <button class="btn btn-block btn-epam" type="submit" name="button"><span class="icon">
+            < EPAM LOGIN>
+          </span></button>
+
+            </div>
+        </div>
+
+</body>
+
+</html>
